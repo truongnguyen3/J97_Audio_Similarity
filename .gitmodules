@@ -1,0 +1,3 @@
+[submodule "music-plagiarism-detector-transformers"]
+	path = music-plagiarism-detector-transformers
+	url = https://github.com/laurixhc/music-plagiarism-detector-transformers
