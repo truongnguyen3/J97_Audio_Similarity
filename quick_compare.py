@@ -15,9 +15,10 @@ def quick_audio_similarity(file1, file2):
     print(f"🎵 Comparing: {os.path.basename(file1)} vs {os.path.basename(file2)}")
     
     try:
-        # Load audio files (first 30 seconds)
-        y1, sr1 = librosa.load(file1, duration=30)
-        y2, sr2 = librosa.load(file2, duration=30)
+        # Load complete audio files
+        print("   Loading audio files... (this may take a moment)")
+        y1, sr1 = librosa.load(file1)
+        y2, sr2 = librosa.load(file2)
         
         # Extract MFCC features (most important for similarity)
         mfcc1 = np.mean(librosa.feature.mfcc(y=y1, sr=sr1, n_mfcc=13), axis=1)
@@ -48,10 +49,10 @@ def quick_audio_similarity(file1, file2):
                             tempo_similarity * 0.2)
         
         # Ensure non-negative values
-        mfcc_similarity = max(0, mfcc_similarity)
-        chroma_similarity = max(0, chroma_similarity)
-        tempo_similarity = max(0, tempo_similarity)
-        overall_similarity = max(0, overall_similarity)
+        mfcc_similarity = max(0.0, float(mfcc_similarity))
+        chroma_similarity = max(0.0, float(chroma_similarity))
+        tempo_similarity = max(0.0, float(tempo_similarity))
+        overall_similarity = max(0.0, float(overall_similarity))
         
         # Display results
         print(f"\n📊 Similarity Results:")

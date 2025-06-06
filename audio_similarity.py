@@ -26,8 +26,8 @@ class AudioSimilarityAnalyzer:
         print(f"Extracting features from: {os.path.basename(audio_file)}")
         
         try:
-            # Load audio file
-            y, sr = librosa.load(audio_file, duration=30)  # Load first 30 seconds for efficiency
+            # Load complete audio file
+            y, sr = librosa.load(audio_file)  # Load entire audio file
             
             features = {}
             
