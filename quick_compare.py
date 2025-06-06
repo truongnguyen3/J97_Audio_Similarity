@@ -88,8 +88,8 @@ def get_similarity_level(score):
         return "Very Different"
 
 if __name__ == "__main__":
-    # Your audio files
-    audio_dir = "/Users/truong.nguyen3/Documents/_work_samples/Audio_Similarity"
+    # Your audio files - use current directory
+    audio_dir = os.path.dirname(os.path.abspath(__file__))
     file1 = os.path.join(audio_dir, "JACK - J97 ｜ TRẠM DỪNG CHÂN ｜ Track No.3 [iK-Cji6J73Q].mp3")
     file2 = os.path.join(audio_dir, "梦散之地 - 颜人中 [hNiUGst5SX8].mp3")
     
