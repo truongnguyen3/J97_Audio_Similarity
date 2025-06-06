@@ -1,4 +1,4 @@
-Check with AI audio generated content detector and it shows J97 is read voice and another one is AI-generated
+Check with AI audio generated content detector and it shows J97 is real voice and another one is AI-generated
 links: 
 - https://detect.resemble.ai/results/0e6f6137bec0fe97872923e054758b92
 <img src="./Screenshot 2025-06-07 at 00.36.30.png">
