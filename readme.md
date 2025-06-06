@@ -1,3 +1,11 @@
+Check with AI audio generated content detector and it shows J97 is real voice and another one is AI-generated
+links: 
+- https://detect.resemble.ai/results/0e6f6137bec0fe97872923e054758b92
+<img src="./Screenshot 2025-06-07 at 00.36.30.png">
+
+- https://detect.resemble.ai/results/a6da72bc57673a853652446acb72cfdc
+<img src="./Screenshot 2025-06-07 at 00.36.21.png">
+
 # Audio Plagiarism Detection System
 
 This repository contains two distinct methods for detecting audio plagiarism between songs:
