@@ -1,3 +1,10 @@
+How to use:
+1. clone the repo
+2. setup virtual python environment
+3. run `python quick_compare.py`
+4. feel free to update args in quick_compare file
+
+
 Results:
 
 🎵 Comparing: JACK - J97 ｜ TRẠM DỪNG CHÂN ｜ Track No.3 [iK-Cji6J73Q].mp3 vs 梦散之地 - 颜人中 [hNiUGst5SX8].mp3
